@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dizzy Cyber Solutions - Web design, branding, and digital services that transform.">
     <title>Dizzy Cyber Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
             text-align: center;
-            padding: 50px 20px 30px 20px;
+            padding: 40px 20px 20px 20px;
         }
         header img {
             max-width: 400px;
@@ -35,12 +37,13 @@
             color: #555;
         }
         .section {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
         }
         .section h2 {
             color: #2e64c3;
+            font-weight: 600;
         }
         .services ul, .portfolio-links {
             list-style: none;
@@ -56,7 +59,7 @@
         .portfolio-links a {
             text-decoration: none;
             color: #2e64c3;
-            font-weight: bold;
+            font-weight: 600;
         }
         .contact {
             background-color: #2e64c3;
@@ -64,6 +67,20 @@
             padding: 40px 20px;
             text-align: center;
             font-size: 1.2em;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            background-color: #fff;
+            color: #2e64c3;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e5e5e5;
         }
         footer {
             text-align: center;
@@ -111,7 +128,8 @@
 </div>
 
 <div class="contact">
-    📧 Ready to get started? Contact us at <a href="mailto:hello@dizzycybersolutions.com" style="color:#fff;text-decoration:underline;">hello@dizzycybersolutions.com</a>
+    📧 Ready to get started? <br>
+    <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
 </div>
 
 <footer>
