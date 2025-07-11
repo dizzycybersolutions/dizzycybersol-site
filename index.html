@@ -61,6 +61,14 @@
     <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
 </div>
 
+<script>
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('menu-toggle')) {
+      document.querySelector('.nav-links').classList.toggle('show');
+    }
+  });
+</script>
+
 <footer>
     &copy; 2025 Dizzy Cyber Solutions. All rights reserved.
 </footer>
