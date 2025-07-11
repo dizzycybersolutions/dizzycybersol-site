@@ -79,3 +79,68 @@ footer {
     font-size: 0.9em;
     color: #aaa;
     }
+    
+    /* === NAVIGATION BAR === */
+.navbar {
+    background-color: #2e64c3;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 20px;
+}
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #cddcff;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2e64c3;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+}
