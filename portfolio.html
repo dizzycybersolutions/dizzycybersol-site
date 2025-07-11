@@ -9,11 +9,12 @@
 </head>
 <body>
 
-  <header>
-  <a href="index.html">
-    <img src="DizzyCyberSolutionsWhiteLogo.png" alt="Dizzy Cyber Solutions Logo">
-  </a>
-</header>
+  <header id="site-header"></header>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('site-header').innerHTML = data);
+</script>
 
   <div class="hero">
     <h1>Our Portfolio</h1>
