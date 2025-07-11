@@ -18,6 +18,12 @@
     .then(data => document.getElementById('site-header').innerHTML = data);
 </script>
 
+<div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('navbar').innerHTML = data);
+</script>
 
 <div class="hero">
     <h1>Web Design, Branding, and Digital Solutions</h1>
