@@ -143,4 +143,11 @@ footer {
     .nav-links.show {
         display: flex;
     }
+ 
+ .check {
+    margin-right: 6px;
+    color: #2e64c3;
+    font-size: 1.1em;
+}  
+     
 }
