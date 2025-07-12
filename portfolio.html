@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="web design, logo design, branding, Jacksonville, small business websites">
-<meta name="author" content="Dizzy Cyber Solutions">
+  <meta name="author" content="Dizzy Cyber Solutions">
   <title>Portfolio | Dizzy Cyber Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header id="site-header"></header>
+<header id="site-header"></header>
 <script>
   fetch('header.html')
     .then(response => response.text())
@@ -32,21 +33,36 @@
   </div>
 
   <div class="section">
-    <h2>Live Projects</h2>
-    <ul class="portfolio-links">
-      <li><a href="https://queenherbalist.com" target="_blank">QueenHerbalist.com</a></li>
-      <li><a href="https://bossmediamanagement.wixsite.com/boss-media-managemen" target="_blank">Boss Media Management</a></li>
-    </ul>
-    <p>[More portfolio items will be added soon with screenshots and case studies.]</p>
+    <h2>Featured Projects</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <a href="https://queenherbalist.com" target="_blank">
+          <img src="queen-herbalist-thumbnail.jpeg" alt="Queen Herbalist Project">
+          <div class="overlay">
+            <h3>QueenHerbalist.com</h3>
+            <p>Branding + E-commerce</p>
+          </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://bossmediamanagement.wixsite.com/boss-media-managemen" target="_blank">
+          <img src="boss-media-management-thumbnail.jpeg" alt="Boss Media Management Project">
+          <div class="overlay">
+            <h3>Boss Media Management</h3>
+            <p>Social Media Management</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </main>
 
-  <div class="contact">
-    📧 Ready to get started? <br>
-    <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
-  </div>
-  
-  <script>
+<div class="contact">
+  📧 Ready to get started? <br>
+  <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
+</div>
+
+<script>
   document.addEventListener('click', function (e) {
     if (e.target.classList.contains('menu-toggle')) {
       document.querySelector('.nav-links').classList.toggle('show');
@@ -54,10 +70,9 @@
   });
 </script>
 
-
-  <footer>
-    &copy; 2025 Dizzy Cyber Solutions. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 Dizzy Cyber Solutions. All rights reserved.
+</footer>
 
 </body>
 </html>
