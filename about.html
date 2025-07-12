@@ -1,59 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="web design, logo design, branding, Jacksonville, small business websites">
-	<meta name="author" content="Dizzy Cyber Solutions">
+  <meta name="description" content="Learn more about Dizzy Cyber Solutions, a creative studio based in Jacksonville." />
+  <meta name="author" content="Dizzy Cyber Solutions" />
   <title>About Us | Dizzy Cyber Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .about-section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .about-section h2 img {
+      width: 24px;
+      height: 24px;
+    }
+    .timeline {
+      border-left: 3px solid #2e64c3;
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+    .timeline .event {
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .timeline .event::before {
+      content: "•";
+      color: #2e64c3;
+      font-size: 24px;
+      position: absolute;
+      left: -16px;
+      top: -2px;
+    }
+  </style>
 </head>
 <body>
 
-<header id="site-header"></header>
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('site-header').innerHTML = data);
-</script>
-
-<div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
-
-<main>
-  <div class="hero">
-    <h1>About Us</h1>
-    <p>Learn more about the mission and team behind Dizzy Cyber Solutions.</p>
-  </div>
-
-  <div class="section about">
-    <h2>Our Story</h2>
-    <p>[Placeholder content — this is where you'll add your background, vision, and core values.]</p>
-  </div>
-</main>
-
-  <div class="contact">
-    📧 Ready to get started? <br>
-    <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
-  </div>
-  
+  <!-- Header -->
+  <header id="site-header"></header>
   <script>
-  document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('menu-toggle')) {
-      document.querySelector('.nav-links').classList.toggle('show');
-    }
-  });
-</script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('site-header').innerHTML = data);
+  </script>
 
+  <!-- Navigation -->
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
 
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <h1>About Dizzy Cyber Solutions</h1>
+      <p>Empowering small businesses and entrepreneurs through smart digital design.</p>
+    </div>
+
+    <div class="section about-section">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User Icon" /> Who We Are</h2>
+      <p>Dizzy Cyber Solutions is a Jacksonville-based creative tech studio specializing in web design, branding, and digital tools for small businesses and individuals. With years of IT experience and a love for design, we bridge creativity and functionality to deliver solutions that make a real impact.</p>
+
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Mission Icon" /> Our Mission</h2>
+      <p>To empower entrepreneurs, creators, and professionals with digital assets that elevate their brand and grow their online presence. We believe great design should be accessible, professional, and personalized — no cookie-cutter templates here.</p>
+
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Checklist Icon" /> Why Choose Us?</h2>
+      <ul>
+        <li>✅ Local, reliable service with real communication</li>
+        <li>✅ Fully custom designs tailored to your brand</li>
+        <li>✅ Technical experience + creative strategy</li>
+      </ul>
+
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Timeline Icon" /> Our Journey</h2>
+      <div class="timeline">
+        <div class="event"><strong>2019:</strong> Began freelance design & IT consulting.</div>
+        <div class="event"><strong>2022:</strong> Founded Dizzy Cyber Solutions with a mission to support small businesses.</div>
+        <div class="event"><strong>2025:</strong> Expanded services to include branding and mobile SEO solutions.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Contact Call to Action -->
+  <div class="contact">
+    📧 Want to work together? <br>
+    <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Let’s Talk</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     &copy; 2025 Dizzy Cyber Solutions. All rights reserved.
   </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('menu-toggle')) {
+        document.querySelector('.nav-links').classList.toggle('show');
+      }
+    });
+  </script>
 
 </body>
 </html>
