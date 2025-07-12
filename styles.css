@@ -182,7 +182,7 @@ footer {
 .timeline {
     border-left: 3px solid #2e64c3;
     padding-left: 20px;
-    margin: 0px auto;
+    margin: 40px auto;
     max-width: 600px;
 }
 .timeline .event {
