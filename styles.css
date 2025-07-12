@@ -40,10 +40,14 @@ header img {
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
+    
 }
 .section h2 {
     color: #2e64c3;
     font-weight: 600;
+    text-align: center;
+}
+.section p {
     text-align: center;
 }
 
@@ -64,6 +68,9 @@ header img {
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+.about p {
+    text-align: center;
 }
 .portfolio-links li {
     margin: 5px 0;
