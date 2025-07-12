@@ -68,13 +68,14 @@ header img {
 .cta-button {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 24px;
+    padding: 14px 28px;
     background-color: #fff;
     color: #2e64c3;
     font-weight: 600;
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s ease;
+    font-size: 1em;
 }
 .cta-button:hover {
     background-color: #e5e5e5;
