@@ -153,7 +153,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-align: cener;
 }
 .about-section h2 img,
 .section-icon {
@@ -161,6 +160,7 @@ footer {
     height: 24px;
     object-fit: contain;
     vertical-align: middle;
+    text-align: center;
 }
 
 /* === TIMELINE === */
