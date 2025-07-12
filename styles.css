@@ -149,7 +149,8 @@ footer {
 }
 
 /* === ABOUT SECTION === */
-.about-section h2, ul {
+.about-section h2, 
+ul li {
     display: flex;
     align-items: center;
     gap: 10px;
