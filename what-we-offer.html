@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="web design, logo design, branding, Jacksonville, small business websites">
-<meta name="author" content="Dizzy Cyber Solutions">
+  <meta name="author" content="Dizzy Cyber Solutions">
   <title>What We Offer | Dizzy Cyber Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
@@ -13,47 +14,56 @@
 
   <!-- Header -->
   <header id="site-header"></header>
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('site-header').innerHTML = data);
-</script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('site-header').innerHTML = data);
+  </script>
 
   <!--Nav Bar -->
   <div id="navbar"></div>
-<script>
-  fetch('navbar.html')
-    .then(res => res.text())
-    .then(data => document.getElementById('navbar').innerHTML = data);
-</script>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('navbar').innerHTML = data);
+  </script>
 
   <!-- Main Content -->
-<main>
-  <div class="hero">
-    <h1>Our Services</h1>
-    <p>Discover the full range of creative and technical services we offer.</p>
-  </div>
+  <main>
+    <div class="hero">
+      <h1>Our Services</h1>
+      <p>Discover the full range of creative and technical services we offer.</p>
+    </div>
 
-  <div class="section services">
-    <h2>What We Offer</h2>
-    <p>[Service details coming soon. This is where each service will be expanded with images and examples.]</p>
-  </div>
-</main>
+    <div class="section services">
+      <h2>Custom Website Development</h2>
+      <p>We build fully responsive, mobile-optimized websites using platforms like Wix, WordPress, and Shopify. Whether you’re launching a new business or refreshing your brand, we’ll deliver a site that’s fast, secure, and designed to convert.</p>
+
+      <h2>Logo & Brand Identity Design</h2>
+      <p>Your logo is the face of your brand — we help you make it unforgettable. We offer clean, modern logos and branding packages that include color palettes, fonts, and design assets that work across digital and print.</p>
+
+      <h2>Business Document Templates</h2>
+      <p>Present your business professionally with polished templates for invoices, proposals, client intake forms, and more — customized with your brand elements and ready to use in Microsoft Word, Google Docs, or PDF format.</p>
+
+      <h2>SEO-Optimized, Mobile-First Pages</h2>
+      <p>We prioritize speed, accessibility, and search engine visibility on every site. Our pages are clean-coded and optimized with on-page SEO, metadata, and schema, so you’re more likely to rank on Google and deliver a great mobile experience.</p>
+    </div>
+  </main>
 
   <!-- Contact -->
   <div class="contact">
     📧 Ready to get started? <br>
     <a class="cta-button" href="mailto:hello@dizzycybersolutions.com">Contact Us</a>
   </div>
-  
+
   <!--Javascript for nav bar mobile toggle-->
   <script>
-  document.addEventListener('click', function (e) {
-    if (e.target.classList.contains('menu-toggle')) {
-      document.querySelector('.nav-links').classList.toggle('show');
-    }
-  });
-</script>
+    document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('menu-toggle')) {
+        document.querySelector('.nav-links').classList.toggle('show');
+      }
+    });
+  </script>
 
   <!-- Footer -->
   <footer>
