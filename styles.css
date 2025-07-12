@@ -149,10 +149,11 @@ footer {
 }
 
 /* === ABOUT SECTION === */
-.about-section h2 {
+.about-section h2, ul {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-align: cener;
 }
 .about-section h2 img,
 .section-icon {
