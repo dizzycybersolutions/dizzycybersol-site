@@ -67,6 +67,9 @@ header img {
 }
 .portfolio-links li {
     margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .portfolio-links a {
     text-decoration: none;
